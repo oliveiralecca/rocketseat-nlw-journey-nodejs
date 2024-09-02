@@ -6,7 +6,8 @@ import { dayjs } from "../lib/dayjs";
 import { getMailClient } from "../lib/mail";
 import nodemailer from "nodemailer";
 
-export async function confirmTrip(app: FastifyInstance) {
+// COMMENT: minuto 17:50 do vídeo
+export async function confirmParticipant(app: FastifyInstance) {
   app.withTypeProvider<ZodTypeProvider>().get(
     '/trips/:tripId/confirm',
     {
